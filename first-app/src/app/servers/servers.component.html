@@ -33,14 +33,4 @@
 	class="btn btn-primary"
 	[disabled] = "!userName"
 	(click) = "onDeleteUser()">Delete User</button> -->
-	<button 
-	class="btn btn-primary"
-	(click) = "onCreatePassword()"
-	>
-Display Details</button>
-
-<p 
-[ngClass]="passwordStatus ? '' : 'hidden'">			Secret Password = Tuna</p>
-
-<p *ngFor="let item of detailsDateArr">
-{{ item }} </p>
+	

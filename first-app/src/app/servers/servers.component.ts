@@ -12,9 +12,7 @@ export class ServersComponent implements OnInit {
 	userName = '';
 	serverCreated = false;
 	servers = ['TestServer', 'TestServer_2'];
-	passwordStatus = false;
-	detailsDateArr = [];
-	countDateLogItems = 0;
+	
 
   constructor() {
   	setTimeout(() => { 
@@ -31,11 +29,7 @@ export class ServersComponent implements OnInit {
   	this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
   }
 
-  onCreatePassword() {
-  	this.passwordStatus = !this.passwordStatus;
-  	this.detailsDateArr.push(new Date().toString());
-  	this.countDateLogItems++;
-  }
+  
 
   onDeleteUser() {
   	this.userName = '';

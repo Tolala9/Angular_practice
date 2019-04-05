@@ -5,9 +5,21 @@
 			<hr>
 			<app-servers></app-servers>
 			<!-- <div class="warning-alert"></div>
-			<div class="success-alert"></div> -->
-		</div>
+				<div class="success-alert"></div> -->
+				<button 
+				class="btn btn-primary"
+				(click) = "showPassword = !showPassword; onCreatePassword()">
+			Display Details</button>
+
+			<p 
+			*ngIf="showPassword">			Secret Password = Tuna</p>
+
+			<p *ngFor="let item of detailsDateArr"
+			[ngStyle]="{backgroundColor: item >= 5 ? 'blue' : 'white'}"
+			[ngClass]="{'white-text': item >= 5 }">
+				{{ item }} </p>
 	</div>
+</div>
 </div>
 
 
