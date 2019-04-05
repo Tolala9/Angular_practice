@@ -10,10 +10,7 @@ export class AppComponent {
 	detailsDateArr = [];
 	
 	onCreatePassword() {
-		const item = {
-			index: this.detailsDateArr.length,
-			date: new Date()
-		}
-		this.detailsDateArr.push(item);
+		
+		this.detailsDateArr.push( new Date() );
 	}
 }

@@ -13,10 +13,10 @@
 
 			<p *ngIf="showPassword">Secret Password = Tuna</p>
 
-			<p *ngFor="let item of detailsDateArr"
-			[ngStyle]="{backgroundColor: item.index >= 5 ? 'blue' : 'white'}"
-			[ngClass]="{'white-text': item.index >= 5 }">
-				{{ item.date }} </p>
+			<p *ngFor="let item of detailsDateArr; let i = index"
+			[ngStyle]="{backgroundColor: i >= 4 ? 'blue' : 'white'}"
+			[ngClass]="{'white-text': i >= 4 }">
+				{{ item }} </p>
 	</div>
 </div>
 </div>
